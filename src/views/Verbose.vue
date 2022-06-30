@@ -202,6 +202,18 @@ export default {
       }
     },
   },
+  methods: {
+    isExcluded(result) {
+      return this.excludedResults.includes(result);
+    },
+    excludeResult(result) {
+      if (this.isExcluded(result)) {
+        this.excludedResults = this.excludedResults.filter(r => r !== result);
+      } else {
+        this.excludedResults.push(result);
+      }
+    },
+  },
   created() {
     if (this.verboseData?.sessionId) return;
 

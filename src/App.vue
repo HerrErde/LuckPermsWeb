@@ -37,7 +37,7 @@
             </a>
           </li>
           <li class="external">
-            <a href="https://discord.herrerde.cf" target="_blank" class="discord">
+            <a href="https://discord.herrerde.xyz" target="_blank" class="discord">
               <font-awesome :icon="['fab', 'discord']" fixed-width />
               <span>Discord</span>
             </a>
@@ -96,7 +96,7 @@
             <router-link v-if="!config.selfHosted" to="/wiki/Credits" target="_blank">
               Copyright © 2017-{{ new Date().getFullYear().toString() }} LuckPerms contributors
             </router-link>
-            <a v-else href="https://perms.herrerde.cf/wiki/Credits" target="_blank">
+            <a v-else href="https://perms.herrerde.xyz/wiki/Credits" target="_blank">
               Copyright © 2017-{{ new Date().getFullYear().toString() }} LuckPerms contributors
             </a>
           </li>
@@ -121,11 +121,11 @@ export default {
       },
       {
         property: 'og:image',
-        content: 'https://perms.herrerde.cf/logo.png',
+        content: 'https://perms.herrerde.xyz/logo.png',
       },
       {
         property: 'og:url',
-        content: 'https://perms.herrerde.cf/',
+        content: 'https://perms.herrerde.xyz/',
       }
     ],
   },

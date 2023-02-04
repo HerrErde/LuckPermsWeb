@@ -65,7 +65,7 @@
             </span>
             <small>{{ $t("home.wiki") }}</small>
           </router-link>
-          <a href="https://discord.herrerde.cf" class="resource">
+          <a href="https://discord.herrerde.xyz" class="resource">
             <span>
               <font-awesome :icon="['fab', 'discord']" />
               Discord

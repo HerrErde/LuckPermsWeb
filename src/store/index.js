@@ -30,7 +30,6 @@ export default new Vuex.Store({
       velocity: null,
     },
     discordUserCount: null,
-    patreonCount: null,
     editor: {
       sessionId: null,
       socket: null,
@@ -79,8 +78,6 @@ export default new Vuex.Store({
     placeholderExpansions: state => state.placeholderExpansions,
 
     discordUserCount: state => state.discordUserCount,
-
-    patreonCount: state => state.patreonCount,
 
     editorSessionId: state => state.editor.sessionId,
 
@@ -164,10 +161,6 @@ export default new Vuex.Store({
 
     setDiscordUserCount: (state, discordUserCount) => {
       state.discordUserCount = discordUserCount;
-    },
-
-    setPatreonCount: (state, patreonCount) => {
-      state.patreonCount = patreonCount;
     },
 
     initEditorData(state, sessionId) {
@@ -512,7 +505,6 @@ export default new Vuex.Store({
         commit('setAdditionalPlugins', appData.data.additionalPlugins);
         commit('setPlaceholderExpansions', appData.data.placeholderExpansions);
         commit('setDiscordUserCount', appData.data.discordUserCount);
-        commit('setPatreonCount', appData.data.patreonCount);
       } catch (error) {
         console.error('Error getting data, trying again in 10 seconds...');
         setTimeout(async () => {

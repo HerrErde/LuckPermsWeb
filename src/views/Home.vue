@@ -121,9 +121,6 @@ export default {
     discordUserCount() {
       return this.$store.getters.discordUserCount;
     },
-    patreonCount() {
-      return this.$store.getters.patreonCount;
-    },
   },
 };
 </script>

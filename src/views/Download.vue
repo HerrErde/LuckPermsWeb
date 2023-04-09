@@ -86,9 +86,6 @@ export default {
     };
   },
   computed: {
-    extensions() { return this.$store.getters.extensions; },
-    additionalPlugins() { return this.$store.getters.additionalPlugins; },
-    placeholderExpansions() { return this.$store.getters.placeholderExpansions; },
     downloads() { return this.$store.getters.downloads; },
     version() { return this.$store.getters.version; },
     versionTimestamp() { return this.$store.getters.versionTimestamp; },
@@ -243,38 +240,6 @@ export default {
         .time {
           flex-shrink: 0;
         }
-      }
-    }
-
-    .extensions,
-    .additional-plugins,
-    .placeholder-expansions {
-      &.hero {
-        .container {
-          justify-content: center;
-        }
-
-        h1, p {
-          text-align: center;
-        }
-      }
-
-      .resources {
-        > div {
-          + div {
-            padding-top: 0;
-
-            @include breakpoint($md) {
-              padding-top: 4rem;
-            }
-          }
-        }
-      }
-    }
-
-    .additional-plugins {
-      section {
-        justify-content: center;
       }
     }
   }

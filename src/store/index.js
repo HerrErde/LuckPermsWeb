@@ -501,9 +501,6 @@ export default new Vuex.Store({
         commit('setVersionTimestamp', appData.data.versionTimestamp);
         commit('setChangeLog', appData.data.changeLog);
         commit('setDownloads', appData.data.downloads);
-        commit('setExtensions', appData.data.extensions);
-        commit('setAdditionalPlugins', appData.data.additionalPlugins);
-        commit('setPlaceholderExpansions', appData.data.placeholderExpansions);
         commit('setDiscordUserCount', appData.data.discordUserCount);
       } catch (error) {
         console.error('Error getting data, trying again in 10 seconds...');

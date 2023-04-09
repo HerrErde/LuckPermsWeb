@@ -21,62 +21,11 @@
               <font-awesome icon="asterisk" :spin="true" v-if="!version" />
             </small>
           </router-link>
-          <small>
-            {{ $t("home.supported") }}
-          </small>
         </div>
       </div>
     </section>
 
-    <div class="container" v-if="!config.selfHosted">
-      <section class="resources">
-        <div>
-          <h2>{{ $t("home.why.title") }}</h2>
-          <p>{{ $t("home.why.description") }}</p>
-          <p>{{ $t("home.why.its") }}</p>
-          <ul>
-            <li v-html="$t('home.why.fast')" />
-            <li v-html="$t('home.why.reliable')" />
-            <li v-html="$t('home.why.easy')" />
-            <li v-html="$t('home.why.flexible')" />
-            <li v-html="$t('home.why.extensive')" />
-            <li v-html="$t('home.why.free')" />
-          </ul>
-          <div class="tools">
-            <router-link to="/editor" alt="Web Editor">
-              <font-awesome icon="edit" />
-              {{ $t("links.editor") }}
-            </router-link>
-            <router-link to="/verbose" alt="Verbose Viewer">
-              <font-awesome icon="comment-alt" />
-              {{ $t("links.verbose") }}
-            </router-link>
-            <router-link to="/treeview" alt="Tree Viewer">
-              <font-awesome icon="sitemap" />
-              {{ $t("links.tree") }}
-            </router-link>
-          </div>
-        </div>
-        <div>
-          <router-link to="/wiki" class="resource">
-            <span>
-              <font-awesome icon="book" />
-              {{ $t("links.wiki") }}
-            </span>
-            <small>{{ $t("home.wiki") }}</small>
-          </router-link>
-          <a href="https://discord.herrerde.xyz" class="resource">
-            <span>
-              <font-awesome :icon="['fab', 'discord']" />
-              Discord
-            </span>
-            <small>{{ $t("home.discord", { count: discordUserCount }) }}</small>
-          </a>
-        </div>
-      </section>
-    </div>
-
-    <div class="container selfhosted" v-else>
+    <div class="container selfhosted">
       <section class="resources">
         <div>
           <div class="tools">

@@ -27,7 +27,7 @@
     "title": "Download LuckPerms",
     "build": "Latest, built {time}",
     "typeChoose": "Choose your server type",
-    "bukkit": "Spigot, Paper etc. (1.8.8 to 1.19.x)",
+    "bukkit": "Paper, Spigot etc. (1.8.8 to 1.20.x)",
     "velocity": "Velocity (3.x)",
     "changelog": "Recent Changelog",
     "trouble": {
